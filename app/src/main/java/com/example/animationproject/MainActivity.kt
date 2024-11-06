@@ -28,34 +28,19 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(binding.toolbar)
 
         //We load the animation
+        //TODO create the animation resources in the res folder and fetch them
         val ttbAnim = AnimationUtils.loadAnimation(this, R.anim.ttb)
-        val ttbAltAnim = AnimationUtils.loadAnimation(this, R.anim.ttb_alt)
-        val jFadeAnim = AnimationUtils.loadAnimation(this, R.anim.jevil_fade)
-        val ralseiAnim = AnimationUtils.loadAnimation(this, R.anim.btt_alt2)
-        val krisAnim = AnimationUtils.loadAnimation(this, R.anim.btt)
-        val susieAnim = AnimationUtils.loadAnimation(this,R.anim.btt_alt1)
-
 
 
         //We fetch the views that will perform the animation
+        //TODO fetch the views
         val titleText = findViewById(R.id.titleText) as TextView
-        val subtitleText = findViewById(R.id.subtitleText) as TextView
-        val jevilImage = findViewById(R.id.imageJevil) as ImageView
-        val ralseiImg = findViewById(R.id.ralseiImage) as ImageView
-        val krisImg = findViewById(R.id.krisImage) as ImageView
-        val susieImg = findViewById(R.id.susieImage) as ImageView
-
 
 
 
         //Loads the animations
+        //TODO load the animations
         titleText.startAnimation(ttbAnim)
-        subtitleText.startAnimation(ttbAltAnim)
-        jevilImage.startAnimation(jFadeAnim)
-
-        ralseiImg.startAnimation(ralseiAnim)
-        krisImg.startAnimation(krisAnim)
-        susieImg.startAnimation(susieAnim)
 
 
     }
